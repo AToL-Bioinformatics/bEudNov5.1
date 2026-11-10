@@ -1,0 +1,4 @@
+sample,assembly_type,assembly_file
+bEudNov5.1,PRIMARY,${PWD}/results/genomeassembly/bEudNov5.1/bEudNov5.1.pacbio_hifi.purged/purging/asm.purged.fa.gz
+bEudNov5.1,HAPLO,${PWD}/results/genomeassembly/bEudNov5.1/bEudNov5.1.pacbio_hifi.purged/purging/asm.htigs.all.fa.gz
+bEudNov5.1,MITO,${PWD}/results/genomeassembly/bEudNov5.1/bEudNov5.1.pacbio_hifi.purged/mito/final_mitogenome.fasta

@@ -1,0 +1,29 @@
+{
+  "assembly_version": 1,
+  "dataset_id": "bEudNov5",
+  "scientific_name": "Eudyptula minor novaehollandiae",
+  "taxon_id": 2052820,
+  "busco_odb10_dataset_name": "aves",
+  "busco_odb12_dataset_name": "aves",
+  "ncbi_class": "Aves",
+  "hic_motif": "GATC,GANTC,CTNAG,TTAA",
+  "mitochondrial_genetic_code_id": 2,
+  "mitohifi_reference_species": "Eudyptula minor",
+  "oatk_hmm_name": "aves",
+  "augustus_dataset_name": "tiberius_model_cfg:vertebrates.yaml",
+  "genetic_code_id": 1,
+  "assembly_id": "e461a29f-a539-41ba-8dbb-c7da0c0d2d72",
+  "read_files": [
+    {
+      "name": "bpa-tsi-pacbio-hifi-687598-m84073_260420_060642_s2",
+      "data_type": "PACBIO_SMRT",
+      "base_url": "https://downloads-qcif.bioplatforms.com/bpa/tsi_staging/pacbio-hifi/BPAOPS-2128/20260701_TSI_AGRF_CAGRF2509033_m84073_260420_060642_s2/",
+      "single_end": [
+        {
+          "url": "https://data.bioplatforms.com/dataset/bpa-tsi-pacbio-hifi-687598-m84073_260420_060642_s2/resource/4aea085d36b86d01f5eef955be41bd63/download/687598_TSI_AGRF_m84073_260420_060642_s2.ccs.bam",
+          "md5sum": "4aea085d36b86d01f5eef955be41bd63"
+        }
+      ]
+    }
+  ]
+}

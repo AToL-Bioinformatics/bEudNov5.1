@@ -1,0 +1,8 @@
+reads_path:
+  - ${PWD}/results/qc/reads/PACBIO_SMRT/bpa-tsi-pacbio-hifi-687598-m84073_260420_060642_s2.fastq.gz
+reads_type: "hifi"
+reads_layout: "SINGLE"
+sample_id: "bEudNov5"
+scientific_name: "Eudyptula minor novaehollandiae"
+busco_lineages: "aves_odb10"
+taxid: 2052820
