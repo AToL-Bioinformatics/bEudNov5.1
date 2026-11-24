@@ -24,14 +24,15 @@ cluster-generic-submit-cmd: mkdir -p logs/slurm/{rule} &&
 default-resources:
   - partitionFlag="--partition=gpu"
   - runtime=5
+restart-times: 1
 set-resources:
   tiberius:
     gpu: "attempt + 1"
-    runtime: "60 if attempt==1 else 1440"
+    runtime: "90 if attempt==1 else 1440"
 # 2. The Pawsey Tiberius container OOMs with containall so we override
 #    `singularity-args` (note the official Tiberius container works fine with
 #    containall).
-singularity-args: -B ${PWD},${TMPDIR},/scratch
+singularity-args: -B ${PWD},${TMPDIR},$(mktemp -d):/opt/Tiberius/model_weights
   -H $(mktemp -d)
   --pwd ${PWD}
   --cleanenv --writable-tmpfs
@@ -46,5 +47,6 @@ singularity-args: -B ${PWD},${TMPDIR},/scratch
   --env RCLONE_CONFIG_UPLOAD_PROVIDER=${RCLONE_CONFIG_UPLOAD_PROVIDER}
   --env RCLONE_CONFIG_UPLOAD_SECRET_ACCESS_KEY=${RCLONE_CONFIG_UPLOAD_SECRET_ACCESS_KEY}
   --env RCLONE_CONFIG_UPLOAD_TYPE=${RCLONE_CONFIG_UPLOAD_TYPE}
+  --env TF_CUDNN_WORKSPACE_LIMIT_IN_MB=${TF_CUDNN_WORKSPACE_LIMIT_IN_MB}
   --env WEBIN_PASS=${WEBIN_PASS}
   --env WEBIN_USER=${WEBIN_USER}
