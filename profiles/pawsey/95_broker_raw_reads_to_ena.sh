@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=broker_raw_reads_to_ena
-#SBATCH --time=0-04
+#SBATCH --time=1-00
 #SBATCH --cpus-per-task=2
 #SBATCH --ntasks=1
 #SBATCH --mem=8g
