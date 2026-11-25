@@ -48,6 +48,7 @@ set-resources:
     runtime: "1h"
   transfer_raw_reads:
     partitionFlag: "--partition=copy"
+    runtime: "1d"
 singularity-args: -B ${PWD},${TMPDIR},/scratch
   -H $(mktemp -d)
   --pwd ${PWD}
